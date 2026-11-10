@@ -376,6 +376,7 @@
     `<a class="btn" href="${S.lineman}" target="_blank" rel="noopener">${icon('truck')}สั่งผ่าน LINE MAN</a>`,
     `<a class="btn" href="${S.facebook}" target="_blank" rel="noopener">Facebook</a>`
   ].join('');
+  if (S.offsite) $('#offsite').innerHTML = `${icon('truck')}<div><b>บริการจัดเลี้ยงนอกสถานที่ 24 ชั่วโมง</b><p>${esc(S.offsite)}</p></div>`;
   $('#mapFrame').src = `https://maps.google.com/maps?q=${S.geo.lat},${S.geo.lng}&hl=th&z=16&output=embed`;
   $('#footL').textContent = `© ${new Date().getFullYear()} ${S.name} · ${S.tagline}`;
   $('#footR').innerHTML = `โทร <a href="tel:${S.tel}">${esc(S.phone)}</a> · ราคาสอบถามตามงาน`;
