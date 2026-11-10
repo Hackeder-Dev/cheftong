@@ -79,6 +79,7 @@ window.PACKAGES = [
 /* รีวิวจากลูกค้า — สรุปจากแหล่งสาธารณะ ไม่แสดงชื่อผู้รีวิว */
 window.REVIEWS = {
   checked: '10 พฤศจิกายน 2569',
+  writeUrl: 'https://search.google.com/local/writereview?placeid=ChIJa6fHUgCP4jARt09fj6cuRCw',   // ลิงก์เขียนรีวิวบน Google (ใช้กับปุ่มและ QR ในเว็บ)
   sources: [
     { name: 'Google Maps', rating: 5.0, count: 8, note: 'ทุกรีวิวให้ 5 ดาว', url: 'https://maps.google.com/?cid=3189725733284958135' },
     { name: 'LINE MAN', rating: 5, count: null, note: 'รีวิวเดลิเวอรีที่ร้านแชร์บนเพจ ชมคุณภาพอาหาร ความสะอาด บรรจุภัณฑ์ และปริมาณ', url: null },

@@ -249,6 +249,12 @@
   $('#rvThemes').innerHTML = RV.themes.map(t => `<div class="panel theme"><h3>${esc(t.title)}</h3><p>${esc(t.text)}</p></div>`).join('');
   $('#rvFine').textContent = `สรุปและย่อจากรีวิวสาธารณะ ไม่แสดงชื่อผู้รีวิว · ตรวจล่าสุด ${RV.checked}`;
 
+
+  /* ---------- review CTA (QR) ---------- */
+  $$('[data-review-write]').forEach(a => a.href = RV.writeUrl);
+  $$('[data-review-read]').forEach(a => a.href = (RV.sources[0] || {}).url || S.mapUrl);
+  document.addEventListener('click', e => { if (e.target.closest('[data-review-write]')) track('click_write_review'); });
+
   /* ---------- FAQ ---------- */
   $('#faqList').innerHTML = FAQ.map((f, i) => `<details${i === 0 ? ' open' : ''}><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('');
 
