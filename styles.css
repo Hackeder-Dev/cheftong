@@ -392,3 +392,6 @@ dialog.small{max-width:min(560px,95vw)}
 @media print{ .top,.g-tools,.mbar,.fab-list,dialog,.more,.map{display:none!important} body{background:#fff;color:#000} .panel,.card{box-shadow:none;break-inside:avoid} }
 .sheet-body .status{margin:0;font-size:15px;font-weight:500;color:var(--leaf);background:var(--leaf-soft);border-radius:10px;padding:10px 14px}
 .sheet-body .saved{margin:0;font-size:14px;color:var(--ink-2)}
+
+.brand .mark{overflow:hidden;box-shadow:0 0 0 2px var(--accent)}
+.brand .mark img{width:100%;height:100%;object-fit:cover;display:block}
